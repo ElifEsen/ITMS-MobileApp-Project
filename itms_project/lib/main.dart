@@ -1,6 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
+import 'package:itms_project/secondaryPage.dart';
 
 void main() {
   runApp(MainApp());
@@ -20,7 +21,12 @@ class MainApp extends StatelessWidget {
   }
 }
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,9 +37,12 @@ class LoginPage extends StatelessWidget {
               SizedBox(
                 height: 50.0,
               ),
-              FlutterLogo(
-                //okul logosu
-                size: 80.0,
+              Container(
+                width: 80.0,
+                height: 80.0,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets/iucMuhendislikLogo.png"))),
               ),
               SizedBox(
                 height: 35.0,
@@ -52,31 +61,37 @@ class LoginPage extends StatelessWidget {
                   children: <Widget>[
                     Padding(
                       padding: const EdgeInsets.all(12.0),
-                      child: Container(
-                        alignment: Alignment.center,
-                        child: Text(
-                          "buton",
-                          style: TextStyle(
-                            fontSize: 18.0,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      secondaryPage()));
+                        },
+                        child: Container(
+                          alignment: Alignment.center,
+                          child: Text(
+                            "Log In",
+                            style: TextStyle(
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
                           ),
+                          width: double.infinity,
+                          height: 52.0,
+                          decoration: BoxDecoration(
+                              color: Colors.blueGrey,
+                              borderRadius:
+                                  BorderRadiusDirectional.circular(20.0)),
                         ),
-                        width: double.infinity,
-                        height: 52.0,
-                        decoration: BoxDecoration(
-                            color: Colors.blueGrey,
-                            borderRadius:
-                                BorderRadiusDirectional.circular(20.0)),
                       ),
                     )
                   ],
                 ),
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20.0)),
                 alignment: Alignment.center,
-                width: MediaQuery.of(context).size.width - 70,
+                width: MediaQuery.of(context).size.width - 50,
                 height: 80.0,
               ),
               SizedBox(
