@@ -1,20 +1,99 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(MainApp());
 }
 
 class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Project',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
+      home: LoginPage(),
     );
+  }
+}
+
+class LoginPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        backgroundColor: Theme.of(context).primaryColor,
+        body: Center(
+          child: Column(
+            children: <Widget>[
+              SizedBox(
+                height: 50.0,
+              ),
+              FlutterLogo(
+                //okul logosu
+                size: 80.0,
+              ),
+              SizedBox(
+                height: 35.0,
+              ),
+              Text("ITIL 4 Modules and Processes",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 30.0,
+                  )),
+              SizedBox(
+                height: 35.0,
+              ),
+              Container(
+                child: Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Container(
+                        alignment: Alignment.center,
+                        child: Text(
+                          "buton",
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                        width: double.infinity,
+                        height: 52.0,
+                        decoration: BoxDecoration(
+                            color: Colors.blueGrey,
+                            borderRadius:
+                                BorderRadiusDirectional.circular(20.0)),
+                      ),
+                    )
+                  ],
+                ),
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20.0)),
+                alignment: Alignment.center,
+                width: MediaQuery.of(context).size.width - 70,
+                height: 80.0,
+              ),
+              SizedBox(
+                height: 50.0,
+              ),
+              Text(
+                "Elif ESEN - 1306180027",
+                style: TextStyle(
+                  fontSize: 20.0,
+                ),
+              ),
+              Text(
+                "Ayşenur KÜLLÜOĞLU - 1306190063",
+                style: TextStyle(fontSize: 20.0),
+              )
+            ],
+          ),
+        ));
   }
 }
