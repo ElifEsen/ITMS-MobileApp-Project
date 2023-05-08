@@ -20,7 +20,18 @@ class guidingPrinciples extends StatelessWidget {
           child: Column(
             children: <Widget>[
               SizedBox(
-                height: 30.0,
+                height: 5.0,
+              ),
+              Container(
+                padding: EdgeInsets.all(8.0),
+                child: Text(
+                  "A guiding principle is a recommendation that guides an organization in all circumstances, regardless of changes in its goals, strategies, type of work, or management structure. A guiding principle is universal and enduring. You can look at overview of it with the following:",
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+                ),
+              ),
+              SizedBox(
+                height: 10.0,
               ),
               InkWell(
                   onTap: () {
@@ -29,9 +40,20 @@ class guidingPrinciples extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (BuildContext context) => focusOnValue()));
                   },
-                  child: Text("focusOnValue")),
+                  child: Container(
+                      alignment: Alignment.center,
+                      width: MediaQuery.of(context).size.width - 80.0,
+                      height: MediaQuery.of(context).size.height / 14,
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey,
+                        borderRadius: BorderRadiusDirectional.circular(20.0),
+                      ),
+                      child: Text(
+                        "Focus On Value",
+                        style: TextStyle(fontSize: 16.0),
+                      ))),
               SizedBox(
-                height: 30.0,
+                height: 10.0,
               ),
               InkWell(
                   onTap: () {
@@ -41,9 +63,20 @@ class guidingPrinciples extends StatelessWidget {
                             builder: (BuildContext context) =>
                                 startWhereYouAre()));
                   },
-                  child: Text("startWhereYouAre")),
+                  child: Container(
+                      alignment: Alignment.center,
+                      width: MediaQuery.of(context).size.width - 80.0,
+                      height: MediaQuery.of(context).size.height / 14,
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey,
+                        borderRadius: BorderRadiusDirectional.circular(20.0),
+                      ),
+                      child: Text(
+                        "Start Where You Are",
+                        style: TextStyle(fontSize: 16.0),
+                      ))),
               SizedBox(
-                height: 30.0,
+                height: 10.0,
               ),
               InkWell(
                   onTap: () {
@@ -53,9 +86,20 @@ class guidingPrinciples extends StatelessWidget {
                             builder: (BuildContext context) =>
                                 progressIterativelyWithFeedback()));
                   },
-                  child: Text("progressIterativelyWithFeedback")),
+                  child: Container(
+                      alignment: Alignment.center,
+                      width: MediaQuery.of(context).size.width - 80.0,
+                      height: MediaQuery.of(context).size.height / 14,
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey,
+                        borderRadius: BorderRadiusDirectional.circular(20.0),
+                      ),
+                      child: Text(
+                        "Progress Iteratively with Feedback",
+                        style: TextStyle(fontSize: 16.0),
+                      ))),
               SizedBox(
-                height: 30.0,
+                height: 10.0,
               ),
               InkWell(
                   onTap: () {
@@ -65,9 +109,20 @@ class guidingPrinciples extends StatelessWidget {
                             builder: (BuildContext context) =>
                                 collaborateAndPromoteVisibility()));
                   },
-                  child: Text("collaborateAndPromoteVisibility")),
+                  child: Container(
+                      alignment: Alignment.center,
+                      width: MediaQuery.of(context).size.width - 80.0,
+                      height: MediaQuery.of(context).size.height / 14,
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey,
+                        borderRadius: BorderRadiusDirectional.circular(20.0),
+                      ),
+                      child: Text(
+                        "Collaborate and Promote Visibility",
+                        style: TextStyle(fontSize: 16.0),
+                      ))),
               SizedBox(
-                height: 30.0,
+                height: 10.0,
               ),
               InkWell(
                   onTap: () {
@@ -77,9 +132,20 @@ class guidingPrinciples extends StatelessWidget {
                             builder: (BuildContext context) =>
                                 thinkAndWorkHolistically()));
                   },
-                  child: Text("thinkAndWorkHolistically")),
+                  child: Container(
+                      alignment: Alignment.center,
+                      width: MediaQuery.of(context).size.width - 80.0,
+                      height: MediaQuery.of(context).size.height / 14,
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey,
+                        borderRadius: BorderRadiusDirectional.circular(20.0),
+                      ),
+                      child: Text(
+                        "Think and Work Holistically",
+                        style: TextStyle(fontSize: 16.0),
+                      ))),
               SizedBox(
-                height: 30.0,
+                height: 10.0,
               ),
               InkWell(
                   onTap: () {
@@ -89,9 +155,20 @@ class guidingPrinciples extends StatelessWidget {
                             builder: (BuildContext context) =>
                                 keepItSimpleAndPractical()));
                   },
-                  child: Text("keepItSimpleAndPractical")),
+                  child: Container(
+                      alignment: Alignment.center,
+                      width: MediaQuery.of(context).size.width - 80.0,
+                      height: MediaQuery.of(context).size.height / 14,
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey,
+                        borderRadius: BorderRadiusDirectional.circular(20.0),
+                      ),
+                      child: Text(
+                        "Keep It Simple and Practical",
+                        style: TextStyle(fontSize: 16.0),
+                      ))),
               SizedBox(
-                height: 30.0,
+                height: 10.0,
               ),
               InkWell(
                   onTap: () {
@@ -101,7 +178,18 @@ class guidingPrinciples extends StatelessWidget {
                             builder: (BuildContext context) =>
                                 optimizeAndAutomate()));
                   },
-                  child: Text("optimizeAndAutomate")),
+                  child: Container(
+                      alignment: Alignment.center,
+                      width: MediaQuery.of(context).size.width - 80.0,
+                      height: MediaQuery.of(context).size.height / 14,
+                      decoration: BoxDecoration(
+                        color: Colors.blueGrey,
+                        borderRadius: BorderRadiusDirectional.circular(20.0),
+                      ),
+                      child: Text(
+                        "Optimize and Automate",
+                        style: TextStyle(fontSize: 16.0),
+                      ))),
             ],
           ),
         ),
