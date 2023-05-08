@@ -21,7 +21,7 @@ class guidingPrinciples extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 SizedBox(
-                  height: 50.0,
+                  height: 10.0,
                 ),
                 Container(
                   padding: EdgeInsets.all(8.0),
@@ -193,6 +193,9 @@ class guidingPrinciples extends StatelessWidget {
                           "Optimize and Automate",
                           style: TextStyle(fontSize: 16.0),
                         ))),
+                SizedBox(
+                  height: 10.0,
+                )
               ],
             ),
           ),

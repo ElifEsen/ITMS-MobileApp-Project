@@ -8,14 +8,13 @@ class collaborateAndPromoteVisibility extends StatelessWidget {
         backgroundColor: Colors.blue,
       ),
       backgroundColor: Colors.blue,
-      body: Center(
-        child: Container(
+      body: ListView(children: <Widget>[
+        Container(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[Text("collaborate ....")],
           ),
         ),
-      ),
+      ]),
     );
   }
 }
