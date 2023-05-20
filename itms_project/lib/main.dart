@@ -37,13 +37,13 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(
                 height: 50.0,
               ),
-              Container(
-                width: 80.0,
-                height: 80.0,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        image: AssetImage("assets/iucMuhendislikLogo.png"))),
-              ),
+              Padding(
+                  padding: const EdgeInsets.only(right: 1.0),
+                  child: Image.network(
+                    "https://cdn.iuc.edu.tr/FileHandler.ashx?f=jJvJLBEYRUe92gmmolgfVw",
+                    width: 150.0,
+                    height: 150.0,
+                  )),
               SizedBox(
                 height: 35.0,
               ),
@@ -74,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
                           child: Text(
                             "Log In",
                             style: TextStyle(
-                              fontSize: 18.0,
+                              fontSize: 20.0,
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),
@@ -99,13 +99,11 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Text(
                 "Elif ESEN - 1306180027",
-                style: TextStyle(
-                  fontSize: 20.0,
-                ),
+                style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
               ),
               Text(
                 "Ayşenur KÜLLÜOĞLU - 1306190063",
-                style: TextStyle(fontSize: 20.0),
+                style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
               )
             ],
           ),

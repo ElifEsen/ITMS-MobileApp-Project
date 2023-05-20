@@ -12,16 +12,14 @@ class processesIntro extends StatelessWidget {
         actions: [
           Padding(
               padding: const EdgeInsets.only(right: 1.0),
-              child: Image.asset(
-                "assets/iucMuhendislikLogo.png",
-                fit: BoxFit.cover,
+              child: Image.network(
+                "https://cdn.iuc.edu.tr/FileHandler.ashx?f=jJvJLBEYRUe92gmmolgfVw",
               ))
         ],
       ),
       backgroundColor: Colors.blue,
       body: Center(
         child: Container(
-          color: Color.fromARGB(200, 33, 96, 243),
           margin: EdgeInsets.all(10.0),
           child: Column(
             children: <Widget>[

@@ -13,6 +13,13 @@ class guidingPrinciples extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
+        actions: [
+          Padding(
+              padding: const EdgeInsets.only(right: 1.0),
+              child: Image.network(
+                "https://cdn.iuc.edu.tr/FileHandler.ashx?f=jJvJLBEYRUe92gmmolgfVw",
+              ))
+        ],
       ),
       backgroundColor: Colors.blue,
       body: ListView(
